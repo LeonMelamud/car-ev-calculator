@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     let filePath;
     if (parsedUrl.pathname === '/' || parsedUrl.pathname === '/index.html') {
         filePath = path.join(__dirname, 'public', 'index.html');
-    } else if (parsedUrl.pathname.startsWith('/data/')) {
+    } else if (parsedUrl.pathname.startsWith('./data/')) {
         filePath = path.join(__dirname, parsedUrl.pathname);
     } else {
         filePath = path.join(__dirname, 'public', parsedUrl.pathname);

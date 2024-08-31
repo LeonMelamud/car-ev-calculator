@@ -1,0 +1,101 @@
+[
+  {
+    "make": "טסלה",
+    "model": "מודל 3",
+    "range": 629,
+    "zeroToSixty": 3.1,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 8
+    },
+    "availableRegions": ["צפון", "מרכז", "דרום"]
+  },
+  {
+    "make": "קיה",
+    "model": "EV6",
+    "range": 528,
+    "zeroToSixty": 5.2,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7.5
+    },
+    "availableRegions": ["צפון", "מרכז", "דרום"]
+  },
+  {
+    "make": "הונדאי",
+    "model": "IONIQ 6",
+    "range": 614,
+    "zeroToSixty": 5.1,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7
+    },
+    "availableRegions": ["צפון", "מרכז"]
+  },
+  {
+    "make": "טויוטה",
+    "model": "bZ4X",
+    "range": 460,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 10
+    },
+    "availableRegions": ["צפון", "מרכז", "דרום"]
+  },
+  {
+    "make": "BYD",
+    "model": "דולפין",
+    "range": 427,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 8
+    },
+    "availableRegions": ["צפון", "מרכז", "דרום"]
+  },
+  {
+    "make": "וולוו",
+    "model": "XC40",
+    "range": 414,
+    "zeroToSixty": 4.9,
+    "chargingTime": {
+      "rapid": 0.7,
+      "home": 12
+    },
+    "availableRegions": ["צפון", "מרכז"]
+  },
+  {
+    "make": "ג'ילי",
+    "model": "גיאומטרי C",
+    "range": 485,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 9
+    },
+    "availableRegions": ["צפון", "מרכז"]
+  },
+  {
+    "make": "הונדאי",
+    "model": "IONIQ 5",
+    "range": 480,
+    "zeroToSixty": 7.4,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7
+    },
+    "availableRegions": ["צפון", "מרכז", "דרום"]
+  },
+  {
+    "make": "פולקסווגן",
+    "model": "ID.4",
+    "range": 524,
+    "zeroToSixty": 8.5,
+    "chargingTime": {
+      "rapid": 0.6,
+      "home": 10
+    },
+    "availableRegions": ["צפון", "מרכז"]
+  }
+]

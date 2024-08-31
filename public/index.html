@@ -27,6 +27,10 @@
             <h1>EV Israel Calculator</h1>
             <p>Find your perfect electric car</p>
         </section>
+        <section class="language-selector">
+            <button id="lang-en" class="language-button" alt="English" onclick="setLanguage('en')">🇺🇸</button>
+            <button id="lang-he" class="language-button" alt="Hebrew" onclick="setLanguage('he')">🇮🇱</button>
+        </section>
         <section class="calculator">
             <form id="parameters-form">
                 <div class="form-group">
@@ -36,25 +40,25 @@
                 <div class="form-group">
                     <label for="daily-distance">Average Daily Driving Distance (km):</label>
                     <select id="daily-distance" name="avgDailyDistance" required>
-                        <option value="50">Up to 50</option>
-                        <option value="100">Up to 100</option>
-                        <option value="150">Up to 150</option>
-                        <option value="200">Up to 200</option>
-                        <option value="250">Up to 250</option>  
-                        <option value="300">Up to 300</option>
-                        <option value="350">Up to 350</option>
-                        <option value="400">Up to 400</option>
-                        <option value="450">Up to 450</option>
-                        <option value="500">Up to 500</option>
-                        <option value="501">More than 500</option>
+                        <option value="50" data-i18n="dailyDistanceOptions.upTo50">Up to 50</option>
+                        <option value="100" data-i18n="dailyDistanceOptions.upTo100">Up to 100</option>
+                        <option value="150" data-i18n="dailyDistanceOptions.upTo150">Up to 150</option>
+                        <option value="200" data-i18n="dailyDistanceOptions.upTo200">Up to 200</option>
+                        <option value="250" data-i18n="dailyDistanceOptions.upTo250">Up to 250</option>  
+                        <option value="300" data-i18n="dailyDistanceOptions.upTo300">Up to 300</option>
+                        <option value="350" data-i18n="dailyDistanceOptions.upTo350">Up to 350</option>
+                        <option value="400" data-i18n="dailyDistanceOptions.upTo400">Up to 400</option>
+                        <option value="450" data-i18n="dailyDistanceOptions.upTo450">Up to 450</option>
+                        <option value="500" data-i18n="dailyDistanceOptions.upTo500">Up to 500</option>
+                        <option value="501" data-i18n="dailyDistanceOptions.moreThan500">More than 500</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="region">Your Region:</label>
                     <select id="region" name="region">
-                        <option value="North">North</option>
-                        <option value="Center">Center</option>
-                        <option value="South">South</option>
+                        <option value="North" data-i18n="regionOptions.north">North</option>
+                        <option value="Center" data-i18n="regionOptions.center">Center</option>
+                        <option value="South" data-i18n="regionOptions.south">South</option>
                     </select>
                 </div>
                 <button type="submit" class="btn-primary">Find My Car</button>
@@ -67,6 +71,29 @@
     <footer>
         <p>&copy; 2024 EV Israel. All rights reserved.</p>
     </footer>
+    <!-- Load i18next from CDN -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@latest/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
     <script src="app.js" type="module"></script>
+    <script>
+        function setLanguage(lang) {
+            const html = document.documentElement;
+            const body = document.body;
+            const langEn = document.getElementById('lang-en');
+            const langHe = document.getElementById('lang-he');
+
+            if (lang === 'he') {
+                html.setAttribute('lang', 'he');
+                body.classList.add('he');
+                langHe.classList.add('active');
+                langEn.classList.remove('active');
+            } else {
+                html.setAttribute('lang', 'en');
+                body.classList.remove('he');
+                langEn.classList.add('active');
+                langHe.classList.remove('active');
+            }
+        }
+    </script>
 </body>
 </html>

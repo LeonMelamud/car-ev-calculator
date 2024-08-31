@@ -18,5 +18,8 @@
     "jest": "^29.5.0",
     "gh-pages": "^5.0.0"
   },
-  "comment": "The server.js file is now located in the root of the car-ev-calculator directory"
+  "dependencies": {
+    "i18next": "^21.6.1",
+    "i18next-browser-languagedetector": "^6.1.2"
+  }
 }
