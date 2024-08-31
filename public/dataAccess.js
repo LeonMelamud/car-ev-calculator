@@ -3,7 +3,7 @@ async function readCarData() {
   try {
     const lang = i18next.language;
     const timestamp = new Date().getTime();
-    const response = await fetch(`/data/cars.${lang}.json?t=${timestamp}`);
+    const response = await fetch(`./data/cars.${lang}.json?t=${timestamp}`);
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
