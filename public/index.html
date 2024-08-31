@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Car Selection Calculator | EV Israel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ev-logo1.jpg" alt="EV Israel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#" class="active">Electric</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>EV Israel Calculator</h1>
+            <p>Find your perfect electric car</p>
+        </section>
+        <section class="calculator">
+            <form id="parameters-form">
+                <div class="form-group">
+                    <label for="home-charger">Do you have a home charger?</label>
+                    <input type="checkbox" id="home-charger" name="hasHomeCharger">
+                </div>
+                <div class="form-group">
+                    <label for="daily-distance">Average Daily Driving Distance (km):</label>
+                    <select id="daily-distance" name="avgDailyDistance" required>
+                        <option value="50">Up to 50</option>
+                        <option value="100">Up to 100</option>
+                        <option value="150">Up to 150</option>
+                        <option value="200">Up to 200</option>
+                        <option value="250">Up to 250</option>  
+                        <option value="300">Up to 300</option>
+                        <option value="350">Up to 350</option>
+                        <option value="400">Up to 400</option>
+                        <option value="450">Up to 450</option>
+                        <option value="500">Up to 500</option>
+                        <option value="501">More than 500</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="region">Your Region:</label>
+                    <select id="region" name="region">
+                        <option value="North">North</option>
+                        <option value="Center">Center</option>
+                        <option value="South">South</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Find My Car</button>
+            </form>
+        </section>
+        <section id="results" class="results">
+            <!-- Recommended cars will be dynamically added here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EV Israel. All rights reserved.</p>
+    </footer>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

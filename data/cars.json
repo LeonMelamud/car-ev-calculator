@@ -1,0 +1,101 @@
+[
+  {
+    "make": "Tesla",
+    "model": "Model 3",
+    "range": 629,
+    "zeroToSixty": 3.1,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 8
+    },
+    "availableRegions": ["North", "Center", "South"]
+  },
+  {
+    "make": "Kia",
+    "model": "EV6",
+    "range": 528,
+    "zeroToSixty": 5.2,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7.5
+    },
+    "availableRegions": ["North", "Center", "South"]
+  },
+  {
+    "make": "Hyundai",
+    "model": "IONIQ 6",
+    "range": 614,
+    "zeroToSixty": 5.1,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7
+    },
+    "availableRegions": ["North", "Center"]
+  },
+  {
+    "make": "Toyota",
+    "model": "bZ4X",
+    "range": 460,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 10
+    },
+    "availableRegions": ["North", "Center", "South"]
+  },
+  {
+    "make": "BYD",
+    "model": "Dolphin",
+    "range": 427,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 8
+    },
+    "availableRegions": ["North", "Center", "South"]
+  },
+  {
+    "make": "Volvo",
+    "model": "XC40",
+    "range": 414,
+    "zeroToSixty": 4.9,
+    "chargingTime": {
+      "rapid": 0.7,
+      "home": 12
+    },
+    "availableRegions": ["North", "Center"]
+  },
+  {
+    "make": "Geely",
+    "model": "Geometry C",
+    "range": 485,
+    "zeroToSixty": 7.0,
+    "chargingTime": {
+      "rapid": 0.5,
+      "home": 9
+    },
+    "availableRegions": ["North", "Center"]
+  },
+  {
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "range": 480,
+    "zeroToSixty": 7.4,
+    "chargingTime": {
+      "rapid": 0.3,
+      "home": 7
+    },
+    "availableRegions": ["North", "Center", "South"]
+  },
+  {
+    "make": "Volkswagen",
+    "model": "ID.4",
+    "range": 524,
+    "zeroToSixty": 8.5,
+    "chargingTime": {
+      "rapid": 0.6,
+      "home": 10
+    },
+    "availableRegions": ["North", "Center"]
+  }
+]
