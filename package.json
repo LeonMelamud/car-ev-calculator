@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "build": "cp -R ./data/* ./public",
+    "build": "cp -R ./public/data/* ./public",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public"
   },
